@@ -1,0 +1,184 @@
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Beranda - SMP Muhammadiyah 5 Kota Tangerang</title>
+  <meta name="description" content="Blog sederhana seperti contoh, dengan palet sky blue ke navy blue">
+  <style>
+    :root{
+      --sky:#87eb9d; /* sky blue */
+      --sky-2:#28dd18;
+      --primary:#1b910b; /* navy-ish */
+      --navy:#001f4d;
+      --muted:#f4f7fb;
+      --card:#ffffff;
+      --glass: rgba(255,255,255,0.06);
+      --radius:14px;
+      --fw-regular: 400;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
+      margin:0;
+      background: linear-gradient(180deg,var(--muted),#eaf6ff);
+      color:#0b2b4a;
+    }
+    header{
+      background:linear-gradient(90deg,var(--sky),var(--primary));
+      color:white;
+      padding:36px 18px;
+      text-align:center;
+      position:relative;
+    }
+    .container{max-width:980px;margin:0 auto;padding:20px}
+    .btn-home{
+      position:absolute;
+      right:20px;
+      top:20px;
+      background:rgba(255,255,255,0.15);
+      border:none;
+      color:white;
+      padding:10px 18px;
+      border-radius:10px;
+      font-weight:600;
+      cursor:pointer;
+      transition:0.2s ease;
+    }
+    .btn-home:hover{
+      background:rgba(255,255,255,0.3);
+    }
+    .hero{display:flex;flex-direction:column;align-items:center;justify-content:center}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(11,45,77,0.08)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+    .small-card{padding:14px;border-radius:12px;background:linear-gradient(180deg,var(--sky-2),#d8ecff);}
+    footer{padding:30px 18px;text-align:center;color:#123856}
+    /* responsive */
+    @media (max-width:720px){
+      header{text-align:center}
+      .btn-home{position:static;margin-top:12px}
+    }
+    .profile-img {
+  width: 220px;
+  height: auto;
+  display: block;          /* supaya bisa ditengahin pakai margin auto */
+  margin: 16px auto;       /* otomatis tengah horizontal */
+  border-radius: 16px;     /* sudut melengkung */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+  </style>
+</head>
+<body>
+  <header>
+    <button class="btn-home" onclick="window.location.href='index.html'">🏠 Kembali ke Beranda</button>
+    <div class="container">    
+      <div class="hero">
+        <h1 style="margin:8px 0 6px; font-size:30px; color:white">Esktrakurikuler</h1>
+        <p style="margin:0 0 14px; color:rgba(255,255,255,0.9); max-width:620px">
+         SMP Muhammadiyah 5 Kota Tangerang
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:22px">
+    <section class="card">
+    <div class="eskul-container">
+
+        <div class="eskul-card">
+            <h3>Paskibra</h3>
+            <img src="Paskib.jpeg" alt="Paskibra">
+        </div>
+
+        <div class="eskul-card">
+            <h3>Basket</h3>
+            <img src="Basket.jpg" alt="Basket">
+        </div>
+
+        <div class="eskul-card">
+            <h3>Futsal</h3>
+            <img src="Futsal.jpeg" alt="Futsal">
+        </div>
+
+        <div class="eskul-card">
+            <h3>Tapak Suci</h3>
+            <img src="Tapak Suci.png" alt="Tapak Suci">
+        </div>
+
+        <div class="eskul-card">
+            <h3>Marawis</h3>
+            <img src="Marawis.jpeg" alt="Marawis">
+        </div>
+
+        <div class="eskul-card">
+            <h3>Tari</h3>
+            <img src="Tari.jpeg" alt="Tari">
+        </div>
+
+         <div class="eskul-card">
+            <h3>English Club</h3>
+            <img src="EnglishClub.png" alt="EnglishClub">
+        </div>
+
+
+    </div>
+</section>
+
+<style>
+ .eskul-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.eskul-section h2 {
+    color: #2a7c7c;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.eskul-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 40px;
+}
+
+.eskul-card {
+    background: #0b5017;
+    border-radius: 20px;
+    padding: 10px 10px 15px 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.eskul-card:hover {
+    transform: scale(1.03);
+}
+
+.eskul-card h3 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.eskul-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+</style>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 SMP Muhammadiyah 5 Kota Tangerang - Muhammad Kamiluddin Fashla</small>
+    </div>
+  </footer>
+</body>
+</html>

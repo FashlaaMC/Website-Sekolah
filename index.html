@@ -1,0 +1,201 @@
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Beranda - SMP Muhammadiyah 5</title>
+  <meta name="description" content="Blog sederhana seperti contoh, dengan palet sky blue ke navy blue">
+  <style>
+    :root {
+      --sky: #87eb9d;
+      /* sky blue */
+      --sky-2: #28dd18;
+      --primary: #1b910b;
+      /* navy-ish */
+      --navy: #001f4d;
+      --muted: #f4f7fb;
+      --card: #ffffff;
+      --glass: rgba(255, 255, 255, 0.06);
+      --radius: 14px;
+      --fw-regular: 400;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+      margin: 0;
+      background: linear-gradient(180deg, var(--muted), #eaf6ff);
+      color: #129928
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--sky), var(--primary));
+      color: white;
+      padding: 36px 18px
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 20px
+    }
+
+    nav {
+      display: flex;
+      gap: 12px;
+      align-items: center
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 20px
+    }
+
+    .hero {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      padding: 28px 0
+    }
+
+    .hero .left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 6px 18px rgba(11, 45, 77, 0.08)
+    }
+
+    footer {
+      padding: 30px 18px;
+      text-align: center;
+      color: #129928
+    }
+
+    /* responsive */
+    @media (max-width:720px) {
+      .hero {
+        flex-direction: column;
+        align-items: flex-start
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+
+      <div class="hero">
+        <div class="left">
+          <h1 style="margin:8px 0 6px; font-size:30px; color:white">Selamat Datang di Website</h1>
+          <p style="margin:0 0 14px; color:rgba(255,255,255,0.9);">SMP Muhammadiyah 5 Kota Tangerang.</p>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:22px;">
+  <section class="card">
+    <div class="menu-grid">
+
+      <button class="menu-card" onclick="location.href='about.html'">
+        <h4>About Us</h4>
+        <p>Apa itu SMP Muhammadiyah 5 Kota Tangerang?.</p>
+      </button>
+
+      <button class="menu-card" onclick="location.href='history.html'">
+        <h4>Sejarah Sekolah</h4>
+        <p>Bagaimana SMP Muhammadiyah 5 dibuat?.</p>
+       </button>
+
+      <button class="menu-card" onclick="location.href='visi&misi.html'">
+        <h4>Visi & Misi</h4>
+        <p>Visi Misi SMP Muhammadiyah 5.</p>
+      </button>
+
+      <button class="menu-card" onclick="location.href='Eskul.html'">
+        <h4>Esktrakurikuler</h4>
+        <p>Daftar Eskul yang ada di SMP Muhammadiyah 5.</p>
+      </button>
+
+      <button class="menu-card" onclick="location.href='prestasi.html'">
+        <h4>Prestasi</h4>
+        <p>Prestasi-prestasi yang diperoleh murid-murid SMP Muhammadiyah 5.</p>
+      </button>
+
+      <button class="menu-card" onclick="location.href='guru.html'">
+        <h4>Guru-guru</h4>
+        <p>Daftar guru-guru yang mengajar di SMP Muhammadiyah 5.</p>
+      </button>
+
+    </div>
+  </section>
+</main>
+
+<style>
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px 0;
+  }
+
+  .menu-card {
+    width: 100%;
+    max-width: 360px;
+    background: white;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(11, 45, 77, 0.08);
+    padding: 20px;
+    text-align: left;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .menu-card h4 {
+    color: #129928;
+    margin: 0 0 8px;
+    font-size: 18px;
+  }
+
+  .menu-card p {
+    margin: 0;
+    color: #4a855c;
+    font-size: 14px;
+  }
+
+  .menu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(11, 61, 145, 0.15);
+    background: linear-gradient(160deg, #d6ecff, #eaf6ff);
+  }
+
+  .menu-card:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 12px rgba(11, 45, 77, 0.1);
+  }
+</style>
+
+
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 SMP Muhammadiyah 5 Kota Tangerang - Muhammad Kamiluddin Fashla </small>
+    </div>
+  </footer>
+</body>
+
+</html>
